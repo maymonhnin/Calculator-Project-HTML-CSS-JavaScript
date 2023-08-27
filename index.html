@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Calculator project, Calculator html, Calculator html css, Calculator html css js"
+    />
+    <meta
+      name="description"
+      content="Welcome to Calculator project by designing with HTML-CSS-JS"
+    />
+    <title>Calculator Project</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <input
+          type="text"
+          placeholder="0"
+          name="sc"
+          class="input"
+          id="result"
+          disabled
+        />
+      </form>
+
+      <div class="design">
+        <button type="button" onclick="clears()" class="c">C</button>
+        <button type="button" onclick="del()">⌫</button>
+        <button type="button" onclick="sqrt()">&radic;&times;</button>
+        <button type="button" onclick="fact()">n!</button>
+        <button type="button" onclick="power()">x&#94;y</button>
+        <button type="button" onclick="square()">x&#xb2;</button>
+        <button type="button" onclick="display('(')">(</button>
+        <button type="button" onclick="display(')')">)</button>
+        <button type="button" onclick="display(7)">7</button>
+        <button type="button" onclick="display(8)">8</button>
+        <button type="button" onclick="display(9)">9</button>
+        <button type="button" onclick="display('/')" class="op">
+          &#x00f7;
+        </button>
+        <button type="button" onclick="display(4)">4</button>
+        <button type="button" onclick="display(5)">5</button>
+        <button type="button" onclick="display(6)">6</button>
+        <button type="button" onclick="display('*')" class="op">&times;</button>
+        <button type="button" onclick="display(1)">1</button>
+        <button type="button" onclick="display(2)">2</button>
+        <button type="button" onclick="display(3)">3</button>
+        <button type="button" onclick="display('-')" class="op">&minus;</button>
+        <button type="button" onclick="display(0)">0</button>
+        <button type="button" onclick="display('.')">•</button>
+        <button type="button" onclick="changeSign()">&#177;</button>
+        <button type="button" onclick="display('+')" class="op">&plus;</button>
+        <button type="button" onclick="calcul()" class="eq">=</button>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
